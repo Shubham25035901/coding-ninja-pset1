@@ -1,0 +1,14 @@
+.current-time-section{
+    display: flex;
+    align-items: center;
+    gap: 3ch;
+}
+
+form{
+    display: grid;
+    gap: 1ch;
+}
+
+form > * {
+    padding: .5em 1em;
+}

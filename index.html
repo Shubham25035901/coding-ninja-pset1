@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Vanilla JS Alarm Clock</title>
+</head>
+<body>
+    <form>
+        <input type="date" name="date" id="date">
+        <input type="number" name="hour" id="hour" placeholder="Hour" min="1" max="12">
+        <input type="number" name="minute" id="minute" placeholder="Minute" min="0" max="59">
+        <input type="number" name="second" id="second" placeholder="00" readonly>
+        <select name="convention" id="convention" title="Select time convention">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+        <button type="submit">Set Alarm</button>
+    </form>
+
+    <div class="current-time-section">
+        <p><span id="curr-hour">00</span> Hours</p>
+        <p><span id="curr-minute">00</span> Minutes</p>
+        <p><span id="curr-second">00</span> Seconds</p>
+        <p><span id="curr-convention">AM</span></p>
+    </div>
+</body>
+</html>
